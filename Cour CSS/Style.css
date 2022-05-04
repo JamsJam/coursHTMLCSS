@@ -1,0 +1,42 @@
+/*Fil rouge : selecteur, dimension,couleurs  */
+/* Text */
+/* Background */
+/* Boxes */
+/* Positioning */
+/* Flex */
+/* Grid */
+/* Pseudo classe */
+/* Débug */
+/* Responsive */
+
+
+/* Texte */
+
+/* j'indique que le style ici s'appliquera a toute les balises H1 de la page HTML  */
+h1{
+    /* change le Toute les letre en majuscule */
+    text-transform: uppercase; 
+    /* gere l'espace entre les lettres */
+    letter-spacing: 5px;
+    /* gere la grandeur de la police (1rem = 16px mais rem plus apprecié pour le responsive) */
+    font-size: 2.5rem;
+    /* change la couleur du texte  */
+    color: rgba(0, 0, 139, 0.8);
+    /* permet de mettre une ombre au texte ([vers la droite] [vers le bas] [flou de l'ombre]) */
+    text-shadow: 5px 3px 0px #85dada;
+    /* permet d'alligner le texte  */
+    text-align: center;
+    /* permet de changer la police, peut etre importé depuis Google-font via un @import avec le lien de la police ou en la telechargeant et en l'utilisant avec le @font-1 */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+/* Background */
+
+body{ 
+    /* la proprieté backgroung de modifier direction les paramettre de l'image mis en arriere plan */
+    background: url(./Image/sunset-ge9da06f7b_1920.jpg) fixed center/cover;
+    /* le vh est une unité qui depend de la hauter de l'ecran de l'utilisateur. 100vh indique que l'image dois prendre 1'entiereté de la hauteur de l'ecran de l'utilisateur  */
+    height: 200vh;
+
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0")>
+    <!-- titre du document ( a mettre le plus haut possible apres le UTF-)  -->
+    <title>cours HTML</title>
+    <!-- icone de l'onglet -->
+    <link rel="shortcut icon" href="./image/logotitre.png">
+</head>
+<body>
+    <header>
+    <!-- Dive sont les petite parties de la page -->
+    <div><!--Les differents types de titres-->
+
+        <h1>texte - Titre H1 </h1><!--Le H1 il n'en faut qu'un par parge pour un bon referencement--> 
+        <p>Texte basique, <em>texte en italique</em> <strong> texte en gras</strong>. <span><--span  L'element span ne revien pas a la ligne et permet de modifier une partie du texte  /span--></span></p>
+        <!-- l'element <p> debute toujour un nouveau paragraphe donc retourne toujour a la ligne-->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, minima asperiores blanditiis, magnam minus exercitationem fuga ut consequuntur velit quos saepe at nostrum repellendus, est odit! Iusto dolore fugiat voluptatibus.</p>
+
+    </div>
+    </header>
+
+    <!-- Section est une grosse partie de la page -->
+    <section>
+        
+
+        <div>
+            <h2>Photo Titre - H2 </h2>
+
+            <!-- ont insert une image avec la balise img. l'attribut src permet de ciblé l'image avec son lien ou son chemin d'acces, Alt est un texte qui apparaitra si l'image ne s'affiche pas le Height permet de redimensitionner l'image. ATTENTION !! l'image agira comme du texte-->
+            <img src="./image/photo-lac.jpg" alt="photo de lac avec une montagne" height="200">
+        </div>
+        <div>
+            <h3>Liste - Titre - h3</h3>
+            <!-- il existe 2 type de liste. Les listes désordonnées (avec une simple puce) et les listes ordonnées (avec un classement et des chiffres) -->
+
+            <!-- liste desordonnée -->
+            <ul>
+                <li>UL = Unordered List(liste désordonnées)</li>
+                <li>UL = Unordered List(liste désordonnées)</li>
+                <li>UL = Unordered List(liste désordonnées)</li>
+            </ul>
+
+            <!-- liste ordonnées -->
+            <ol>
+                <li>OL= Ordered List (liste ordonnées) </li>
+                <li>OL= Ordered List (liste ordonnées) </li>
+                <li>OL= Ordered List (liste ordonnées) </li>
+            </ol> 
+
+
+        </div>
+
+        <div>
+            <!-- le tableau en HTML se fait en plusieur etapes -->
+            <h4>Tableau - Titre - h4</h4>
+
+            <!-- la balise qui appelle la table. on lui a donner une bordure(border) et une taille horizontale (width) -->
+            <table border="1" width="50%">
+
+                <!-- la legende ou le titre du tableau -->
+                <caption> Population d'europe</caption>
+
+                <!-- l'En-tete du tableau -->
+                <thead>
+                    <tr>
+                        <!-- le libélé des differente colonnes -->
+                        <th>PAYS</th>
+                        <th>POPULATION</th>                        
+                    </tr>
+                </thead>
+
+                <!-- le corps du tableau -->
+                <tbody>
+                    <tr> <!-- ligne 1-->  
+                        <td>France</td>
+                        <td>67 000 000</td>
+                    </tr>
+                    <tr> <!-- ligne 2--> 
+                        <td>Espagne</td>
+                        <td>47 000 000</td>
+                    </tr>
+                    <tr> <!-- ligne 3--> 
+                        <td>Allemagne</td>
+                        <td>82 000 000</td>
+                    </tr>
+                </tbody> <!--fin du corps du tableau-->
+            </table> 
+            <!--fin du tableau-->  
+        </div>
+
+        <div>
+            <h5>Les liens - Titre - H5</h5>
+            <!-- Pour un lien on utilise la balise a. Le href parmet de specifier vers ou va nous enmener le lien. POur ouvrir un lien dans un nouvelle onglet on utilise target=_blanck-->
+
+            <a href="https://htmlsheetcheat.com"> HTML sheetcheat. Cette page donne acces a une sheetcheat (aide memoire) de l'HTML.</a>
+            <br><!--permet de faire un saut de page-->
+            <a href="https://www.toptal.com/designers/htmlarrows/symbols/"> Ce cite permet de creer des symboles en HTML en plaçant le code correspondant dans une balise < span > </a>
+        </div>
+        <div>
+            <h6>les videos - Titre - H6</h6>
+
+            <!-- De la meme maniere que pour l'image le src permet de mettre le chemin d'acces de la video. autoplay pour que la video se lance, loop pour que le video se repete et muted pour que la video ne joue pas avec du son. Redimentionnement avec l'attribut Height -->
+            <video src="./image/Sunrise - 28975.mp4" autoplay loop muted height="200"></video>
+        </div>
+        </section>
+        <br>
+        <section>
+            <h2>Fomulaire</h2>
+             <!-- ici nous verons plusieurs formulaire. -->
+            <form action="#" method="post"> <!-- les different attributs de cette balises ne seront pas detailler-->
+
+                <!-- formulaire type texte -->
+                <!-- input correspont a la case a remplire, placehorder permet de gerer le texte en filigramme -->
+                <label for="name">Nom</label> <!--permet de donner un nom a la case a remplir. fro="" permet de lier le label avec l'input (si l'id est le meme que le for)-->
+                <input id="name" type="text" placeholder="Entrez votre nom"> <!--le id permet de de connecter l'id avec le label-->
+
+                <input type="submit" value="Valider"> <!--permet de valider tout le contenue de la balise Form-->
+
+                <!-- il y a enormement de type de formulaire different. en cherchant "input html" sur google on les trouve assez facilement ;) -->
+            </form>
+        </section>
+        <br>
+        <footer>
+            <!-- Comment linker directement son mail ou mettre un fichier a telecharger -->
+            <a href="mailto:monmail@gmail.com">Va permet d'envoyer un mail  a l'adresse dans le "href"</a>
+            <br>
+            <a href="notice.txt" download="nom-du-fichier.txt">telecharger la notice</a>
+        </footer>
+        
+</body>
+</html>
