@@ -132,7 +132,7 @@ h2{
 	background-image: 
       linear-gradient(
         rgba(0, 0, 0, 0.784), 
-        rgba(6, 141, 190, 0.3)),  
+        rgba(6, 141, 190, 0.3),left right),  
     url(./pepinia/pepinieres_d_entreprise.png)
 
 }

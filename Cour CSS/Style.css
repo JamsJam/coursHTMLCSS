@@ -22,7 +22,7 @@ h1{
     font-size: 2.5rem;
     /* change la couleur du texte  */
     color: rgba(0, 0, 139, 0.8);
-    /* permet de mettre une ombre au texte ([vers la droite] [vers le bas] [flou de l'ombre]) */
+    /* permet de mettre une ombre au texte ([vers la droite] [vers le bas] [flou de l'ombre] [la couleur]) */
     text-shadow: 5px 3px 0px #85dada;
     /* permet d'alligner le texte  */
     text-align: center;
@@ -34,9 +34,90 @@ h1{
 /* Background */
 
 body{ 
-    /* la proprieté backgroung de modifier direction les paramettre de l'image mis en arriere plan */
+    /* la proprieté background de modifier direction les paramettre de l'image mis en arriere plan */
     background: url(./Image/sunset-ge9da06f7b_1920.jpg) fixed center/cover;
-    /* le vh est une unité qui depend de la hauter de l'ecran de l'utilisateur. 100vh indique que l'image dois prendre 1'entiereté de la hauteur de l'ecran de l'utilisateur  */
-    height: 200vh;
+            /* il y a background-image pour juste les image
+            backgroung size pour la taille de l'image
+            backgroung color pour juste une couleur de fond */
 
+
+
+
+    /* le vh est une unité qui depend de la hauter de l'ecran de l'utilisateur. 100vh indique que l'image dois prendre 1'entiereté de la hauteur de l'ecran de l'utilisateur. l'equivalent sur la largeur est "vw"  */
+    /* height: 200vh; */
+
+}
+/* les box */
+main{
+    background-color: whitesmoke;
+
+    width: 90vw;
+    min-height: 500px;
+    /* margin : cree une marge a l'extereieur de l'element selectiioné. l'endroit ou sera cree la marge depend du nombre de valeur associer a la propritété
+    margin : [top] [droite] [bas] [gauche]
+    margin : [vertical] [horizontal] 
+    margin : [de tout les cote]*/
+    margin : 10px auto;
+    /* meme fonctionnelent avec le padding. Le padding cree une marge interne */
+    padding:15px;
+    /*  permet d'arrondir les angle */
+    border-radius: 15px;
+    /* box shadow fonctionne de la meme maniere que texte shadow */
+    /* rgba (rouge de 0 a 255, vert de 0 a 255, bleu de 0 a 255, opacité de 0 a 1)*/
+    box-shadow: 0 2px 12px 5px rgba(0,0,0,0.250)
+}
+
+
+/* le . en css permet de selectionner une classe en particulier et seul les element avec cette classe seront affecter*/
+/* j'ai selectionné 2 classe */
+.positioning,
+.flexbox{
+    /* permet de creer une bordure autour d'un element [largeur] [type de bordure] [couleur] */
+    border: 2px solid skyblue;
+    padding: 10px;
+    margin-top: 20px; /*margin et padding peuvent etre donner avec margin-top/-left/-bottom/-right*/
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 2px 12px 5px rgba(0,0,0,0.250)
+}
+
+/* le # permet de selectionner un id. Un id ne se retrouce qu'une seule fois sur la page  */
+#circle{
+    height: 60px;
+    width: 60px;
+    padding: 20px;
+    border-radius: 50%;
+    /* le position absolut permet de positionner un element par rapport a un element parent qui a un position : relative. Si aucun element parent n'a de position relative si se placera par rapport au body  */
+    position: absolute;
+    top: -10;
+    right: 110px;
+}
+
+#rectangle{
+    height: 15px;
+    width: 100px;
+    background-color: slateblue;
+    padding: 20px;
+    position: absolute;
+    bottom: 2px;
+    /* permet de center l'element en position absolute. l'element ne bourgera plus quoi qu'il arrive */
+    left: 50%;
+    transform : translate(50%)
+}
+/* *******************Flexbox****************** */
+ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+    font-size: 0.7rem;
+    height: 160px;
+    width: 160px;
+    background-color: chocolate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
