@@ -1,0 +1,445 @@
+/**************************** 1) LES SELECTEUR EN CSS ****************************/
+
+
+
+/* Selection des ID avec le # */
+
+/* un id est unique. il n'y en a qu'un par page et permet de selectionner 1 element en particulier */
+#myPgh{
+    color: red;
+}
+
+
+/* Selection des Classes avec le . */
+
+/* les class peuvent etre appliquer a plusieur element sur une page. 
+elle permet de selectionner tout les element possedent la dite classe */
+.myPgh{
+    color: aqua;
+}
+
+
+/* Selection par balise (tag) */
+
+/* en appelant le nom de la balise (sans rien devant) je peux selectionner la dite balise */
+section{
+    background-color: rgb(222, 184, 135);
+}
+
+
+/* selection par type */
+
+/* parmis tout les input, je ne selectionne que le l'input password */
+input[type='password']{
+    border: 3px solid red;
+}
+
+
+/* Selection par l'attribut */
+
+/* Ici j'ai selectionner par l'attribut "titre" pour cibler specifiquement la seconde image */
+img[title="img 2"]{
+    width: 400px;
+}
+
+
+/* Navigation et poid de selection */
+
+/* ce selecteur cible tout les "a" contenu dans des "li" qui sont contenu dans des "ul" eux meme dans une "div" */
+div ul li a{
+    text-decoration: none;
+    color: blue;
+    border: 2px solid green  ;
+}
+
+/* Cette commande ne sera pas pris en compte car celle du dessus a plus de poid de selection */
+
+a{
+    color: red
+}
+/*plus on rajoute d'element au selecteur, plus l'element a du poid, exemple ici avec un element de plus */
+body div ul li a{
+    border: 2px solid rgb(188, 2, 142)  ;
+}
+
+/* Ici seul la selection par ID sera pris en compte car l'ID a plus de poid qu'une classe */
+#myOtherpgh{
+    color: brown;
+}
+
+/* De la meme maniere une classe est plus forte qu'une balise */
+.myOtherpgh{
+    color:darkcyan
+}
+
+/* ce selecteur cible tout les "a" contenu dans le 2e "li" qui sont contenu dans des "ul" eux meme dans la "div" qui possede la classe "mySecondDiv  */
+.mySecondDiv ul li:nth-child(2) a {
+    color: sienna
+}
+
+#selecteur p{
+    color: green
+}
+
+
+/*Je cible ici le 1er "p" de ma div qui possede la classe #myThirdDiv  */
+#myThirdDiv p:first-child{
+    color: black
+}
+
+/* Avec la pseudoclasse :hover j'applique un style qui se declanchera au moment ou ma souris sera sur l'element */
+.survol{
+    color: teal;
+}
+.survol:hover{
+    color: brown;
+}
+
+
+
+
+
+
+
+/**************************** 2) LE TEXTE EN CSS  ****************************/
+
+
+
+/* permet de changer la couleur du texte avec les moyen suivants: */
+.color + p{
+    /* Permer de gerer un melange des couleurs primaire et une valeur de transparance entre 0 et 1 */
+    color: rgba(240,52,52,1); 
+
+    /* rgb et rgba font la meme chose a la difference rgba gere la transparence. Par defaut sur rgb la transparance ( opacity) sera de 1 */
+    /* color rgb(240,52,52); */ 
+
+    /*Certaine couleur sont presente directement dans le navigateur */
+    /* color: red; */
+}   
+
+/* Permet de modifier la taille de la police*/
+Font-size + p {
+    /* Certaine valeur sont predefinis */
+    /* font-size: large; */
+
+    /* Permet de modifier exatement la taille de la police au px pres */
+    /* font-size: 40px; */
+
+    /* le em permet d'avoir une taille en fonction de la taille de la police de l'element parent */
+    /* font-size: 2em; */
+
+    /* Le rem permet de changer la taille de la police en fonction de la valeur de la police par defaut sur le body */
+    font-size: 2rem;
+    
+}
+
+/* modifie la police de caractere de l'element */
+/* Certaine police sont deja presente mais une importation est possible via une balise link ou import */
+/* la deuxieme police (ici sans-cursive) s'appliquera si la premiere police ne fonctionne pas */
+.font-family + p{
+    font-family: cursive, sans-serif;
+}
+
+/* Permet de modifier la hauteur de ligne */
+/* si 0pc alors les ligne seront confondus */
+.line-height + p{
+    line-height: 40px;
+
+
+    /* la width ici est seulement la pour que les interlignes sont visible  */
+    width: 500px;
+}
+
+/* Cette proprieter permet de gerer l'espace entre les mot */
+.word-spacing + p{
+    word-spacing: 30px;
+}
+
+/* Permet de gere l'espace entre le lettre */
+.letter-spacing + p{
+    letter-spacing: 30px ;
+}
+/* Le text-align et les different effet : */
+
+.text-align + p{
+        text-align: center;
+    }
+    #block  #text2 {
+        text-align: right;
+    }
+    #block  #text3 {
+        text-align: left;
+    }
+    #block  #text4 {
+        text-align: justify;
+    }
+
+/* Text-decoration permet de barrer ou souligner(ect...) un text */
+.text-decoration + p{
+    text-decoration: underline;
+
+}
+.deco p:nth-child(3){
+    text-decoration: line-through;
+
+}
+
+/* Change le "gras" (a quel point le texte sera gras) */
+/* Les valeurs vont de 100 a 900  */
+.gras p:nth-child(2) {
+    font-weight: 100;
+}
+.gras p:nth-child(3) {
+    font-weight: 900;
+}
+
+/* Permet de mettre une div en oblique */
+.font-style + p{
+    font-style: oblique;
+}
+
+/* Permet de mettre son text en majuscule, minuscule ect.... */
+.text-transform + p{
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+/**************************** 3) LES HEIHGT ET LES WIDTH EN CSS  ****************************/
+
+
+
+/* Ici on a donner un hauteur (height) et une largeur(width) a la div. L'element a donc maintenant une taille bien definie */
+#HnR div{
+    /* permet de dimentionner la div */
+    height: 200px;
+    width: 200px;
+}
+
+/* Ici on a donné une hauteur et une largeur minimal a la section, donc rien ne l'empeche de prendre toute la largeur disponible */
+/* Il prendra cependant la hauteur minimal comme largeur */
+#HnR section{
+    /* permet de dimentionner la div */
+    min-height: 200px;
+    min-width: 200px;
+}
+
+/* ici une largeur et hauteur maximal ont ete donnée au span. Or le span s'adapte simplement a son contenu. */
+/* Cependent, il n'aurai pas depasser les 200px de hauteur et largeur */
+#HnR span{
+    /* permet de dimentionner la div */
+    max-height: 200px;
+    max-width: 200px;
+}
+
+
+
+
+
+
+/**************************** 4) LES BACKGROUND EN CSS  ****************************/
+
+.background1{
+    height: 200px;
+    width: 200px;
+    background-color: #3449e5;
+    /* permet de centrer un element horizontalement */
+    margin: 0 auto;
+}
+
+.background2{
+    margin: 0 auto;
+    height: 200px;
+    width: 200px;
+    /* Ici on aurai pu raccoucir le tout avec la proprieter background */
+        /* background: url(...) no-repeat 100% center */
+    background-image: url(./Image/sunset-ge9da06f7b_1920.jpg );
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    
+    /* permet de decaler le background horizontalement et verticalement */
+    /* background-position: 20px 50px; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mise en forme des section pour une meilleur lisibilité */
+
+/* Titre  */
+.leTitre{
+    text-align: center;
+    text-shadow: 2px 8px 3px black;
+    background-color: burlywood;
+    color: blue;
+    font-size: 70px;
+    font-weight: 700;
+
+}
+.leTitre,#selecteur h2{
+    margin: 0;
+    padding: 0;
+}
+
+/* La nav et les bouton */
+nav{
+    background-color: #deb887;
+}
+button{
+    height: 60px;
+    width: 150px;
+    margin: 10px;
+    border-radius: 50px;
+}
+button:hover{
+    background-color: #dce378;
+}
+button a{
+    text-decoration: none;
+    color: blueviolet;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* Partie 1 */
+#selecteur .DontMind{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#selecteur .DontMind2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px
+}
+
+/* Partie 2 */
+
+
+#text{
+    background-color: rgb(229, 225, 221);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#text .DontMind{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#text .DontMind2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+#block p {
+    width: 70vw;
+    display: block
+}
+
+
+/* Partie 3 */
+
+#HnR {
+    background-color: rgb(46, 46, 46);
+}
+#HnR h2{
+    text-align: center;
+    color:rgb(229, 225, 221)
+}
+/* Style pour voir les elements et le texte */
+#HnR div,
+#HnR section,
+#HnR span{
+    margin: 20px;
+    background-color: #34495e;
+    color: #fff;
+    font-size:40px
+}
+
+/* Partie 4 */
+
+#BG h2{
+    text-align: center;
+    margin-bottom: 200px;
+}

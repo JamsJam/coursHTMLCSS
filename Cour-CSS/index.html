@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Cours CSS</title>
+</head>
+<body>
+    <header>
+        <h1 class="leTitre">Cour CSS</h1>
+        <nav>
+            <button ><a href="#selecteur">1) Selecteur</a></button>
+            <button ><a href="#text">2) Texte</a></button>
+            <button ><a href="#HnR">3) largeur et hauteur</a></button>
+            <button ><a href="#BG">4) Background</a></button>
+            <button ><a href="#opacity">5) Opacité</a></button>
+            <button ><a href="#border">6) Bordure</a></button>
+            <button ><a href="#zindex">7) z-index</a></button>
+            <button ><a href="#gradient">8) gradient</a></button>
+            <button ><a href="#text">9) Texte</a></button>
+            <button ><a href="#text">10) Texte</a></button>
+            <button ><a href="#text">11) Texte</a></button>
+            <button ><a href="#text">12) Texte</a></button>
+            <button ><a href="#text">14) Texte</a></button>
+            <button ><a href="#text">15)Texte</a></button>
+            <button ><a href="#text">16)Texte</a></button>
+            <button ><a href="#text">17)Texte</a></button>
+            <button ><a href="#text">18)Texte</a></button>
+            <button ><a href="#text">19)Texte</a></button>
+            <button ><a href="#text">20)Texte</a></button>
+            <button ><a href="#text">21)Texte</a></button>
+            <button ><a href="#text">22)Texte</a></button>
+            <button ><a href="#text">23)Texte</a></button>
+            <button ><a href="#text">24)Texte</a></button>
+            <button ><a href="#text">25)Texte</a></button>
+            <button ><a href="#text">26)Texte</a></button>
+            <button ><a href="#text">27)Texte</a></button>
+            <button ><a href="#text">28)Texte</a></button>
+            <button ><a href="#text">29)Texte</a></button>
+            <button ><a href="#text">30)Texte</a></button>
+            <button ><a href="#text">31)Texte</a></button>
+        </nav>
+    </header>
+    <main>
+        <!-- **************************** 1) LES SELECTEUR EN CSS **************************** -->
+        <section id="selecteur">
+            <div class="DontMind">
+                <h2>1) Les Selecteurs en CSS </h2>
+
+
+                <!-- Selection par l'iD -->
+
+                <p id="myPgh" style="border: 1px solid black;">Selection par l'ID</p>
+
+
+                <!-- Selection par la classe -->
+                <div class="DontMind2" style="border: 1px solid black;">
+                    <p class="myPgh">Selection par la class</p>
+                    <p class="myPgh">Selection par la class</p>
+                    <p class="myPgh">Selection par la class</p>
+                </div>
+
+                <!-- Selection par le type -->
+
+                <form action="">
+                    <input type="text" name="firstname" placeholder="my name">
+                    <input type="password" name="password" placeholder="my password">
+                    <input type="email" name="email" placeholder="my email">
+                    <input type="submit" value="Send">
+                </form>
+
+
+                <!-- Selection par attribut -->
+                <div class="DontMind2" style="flex-direction: row">
+                    <img src="https:/picsum.photos/200" alt="alternative text" title="img 1">
+                    <img src="https:/picsum.photos/200" alt="alternative text 2" title="img 2">
+                </div>
+
+                <!-- Navigation et poid de selection -->
+
+                <div>
+                    <ul>
+                        <li><a href="#">mylink</a></li>
+                        <li><a href="#">mylink</a></li>
+                        <li><a href="#">mylink</a></li>
+                    </ul>
+                </div>
+
+                <p id="myOtherpgh" class="myOtherPgh">Voila mon texte</p>
+
+                <div class="mySecondDiv">
+                    <ul>
+                        <li><a href="#">mylink 1er</a></li>
+                        <li><a href="#">mylink 2e</a></li>
+                        <li><a href="#">mylink 3e</a></li>
+                    </ul>
+                </div>
+
+
+                <div id="myThirdDiv" style="border: 1px solid black;">
+                    <p>Seul celui la sera sera different (1er enfant)</p>
+                    <p>Voila mon texte(2e enfant)</p>
+                    <p>Voila mon texte(3e enfant)</p>
+                </div>
+                
+                <h3 class="survol">ce h3 changera de couleur au survol</h3>
+            </div>
+        </section>
+
+        <!-- /**************************** 2) Le TEXTE EN CSS ****************************/ -->
+        <section id="text">
+            <div class="DontMind">
+                <h2>2) Le Texte en CSS</h2>
+
+
+                <div class="DontMind2">
+                    <!--  -->
+                    <h3 class="color">2.1) Color</h3>
+                    <p>Here my text</p>
+                    <p>Here my text</p>
+                </div>
+
+                <div class="DontMind2">
+                    <!--  -->
+                    <h3 class="font-size">2.2) Font-size</h3>
+                    <p>Here my text</p>
+                    <p>Here my text</p>
+                </div>
+                
+                
+                <div class="DontMind2">
+                    <!--  -->
+                    <h3 class="font-family">2.3) Font-family</h3>
+                    <p id="text1">1 Here my text</p>
+                    <p id="text2">2 Here my text</p>
+                </div>
+                
+                
+                <div class="DontMind2">
+                    <!--  -->
+                    <h3 class="line-height">2.4) Line-height</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iure, aut vitae assumenda, possimus neque dolores optio eligendi distinctio ullam numquam labore libero, quasi quod suscipit quisquam? Ipsam vitae, voluptate excepturi sapiente consequatur magnam neque vel quam nisi quas error, quia dolores numquam et dolorum accusantium odio exercitationem! Quia voluptatibus eaque adipisci obcaecati explicabo nostrum nam quidem eveniet, cupiditate illo nemo est rem voluptates ipsam nesciunt possimus culpa quis fugit. Nulla illum atque id ipsum autem eos ex, placeat, sequi aperiam iusto nostrum soluta nobis vitae a, est ab perferendis? Quod ducimus libero laudantium sint voluptatibus voluptatum dolor praesentium dicta.</p>
+                </div>
+                
+                
+                <div class="DontMind2">
+                    <!--  -->
+                    <h3 class="letter-spacing">2.5) Letter-spacing</h3>
+                    <p>Here my text</p>
+                    <p>Here my text</p>
+                </div>
+                
+                
+                <div class="DontMind2">
+                    <!--  -->
+                    <h3 class="word-spacing">2.6) Word-spacing</h3>
+                    <p>Here my text</p>
+                    <p>Here my text</p>
+                </div>
+                
+                
+                <div class="DontMind2" id="block">
+                    <!--  -->
+                    <h3  class="text-align"> 2.7) Text-align</h3>
+                    <p id="text1">1 Here my text</p>
+                    <p id="text2">2 Here my text</p>
+                    <p id="text3">3 Here my text </p>
+                    <p id="text4">4 justify Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit tempore facere sequi nisi sed ipsam vitae provident qui sit. Labore ab unde tenetur quae natus nam suscipit magnam. Vel, fugiat placeat dolor magni eligendi aspernatur. Totam quia, accusamus libero omnis sint sequi possimus voluptatibus maiores quos ratione sapiente quasi magnam?</p>
+                </div>
+                
+                
+                <div class="DontMind2 deco">
+                    <!--  -->
+                    <h3 class="text-decoration">2.8) Text-decoration</h3>
+                    <p>Here my text</p>
+                    <p>Here my text</p>
+                </div>
+                
+                
+                <div class="DontMind2 gras">
+                    <!--  -->
+                    <h3 class="font-weight">2.9) Font-weight</h3>
+                    <p>1) Here my text</p>
+                    <p>2) Here my text</p>
+                </div>
+                
+                
+                <div class="DontMind2">
+                    <!--  -->
+                    <h3 class="font-style">2.10) Font-style</h3>
+                    <p>Here my text</p>
+                    <p>Here my text</p>
+                </div>
+                
+                
+                
+                <div class="DontMind2">
+                    <!--  -->
+                    <h3 class="text-transform">2.13) Text-transform</h3>
+                    <p>Here my text</p>
+                    <p>Here my text</p>
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <!-- /**************************** 3) Width et Height EN CSS ****************************/ -->
+        <section id="HnR">
+            <h2>2) Le Texte en CSS</h2>
+            <div>width : 200px; height: 200px</div>
+            <section>min-height: 200px; min-width: 200px</section>
+            <span>max-higth : 200px; max-width : 200px</span>
+        </section>
+        
+        <!-- /**************************** 4) LES BACKGROUND EN CSS ****************************/ -->
+        <section id="BG">
+            <h2>4) LES BACKGROUND EN CSS</h2>
+            <div class="background1"></div>
+            <div class="background2"></div>
+        </section>
+
+        <!-- /**************************** 4) L'OPACITE EN CSS ****************************/ -->
+        <section id="opacity">
+
+        </section>
+
+        <!-- /**************************** 4) LES BORDUR EN CSS ****************************/ -->
+        <section id="border">
+
+        </section>
+
+        <!-- /**************************** 4) LE Z-INDEX EN CSS ****************************/ -->
+        <section id="zindex">
+
+        </section>
+
+        <!-- /**************************** 4) LES GRADIENT EN CSS ****************************/ -->
+        <section id="gradient">
+
+        </section> 
+
+    </main>
+</body>
+</html>
