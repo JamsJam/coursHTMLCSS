@@ -101,6 +101,17 @@ body div ul li a{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 /**************************** 2) LE TEXTE EN CSS  ****************************/
 
 
@@ -209,6 +220,13 @@ Font-size + p {
 
 
 
+
+
+
+
+
+
+
 /**************************** 3) LES HEIHGT ET LES WIDTH EN CSS  ****************************/
 
 
@@ -235,6 +253,22 @@ Font-size + p {
     max-height: 200px;
     max-width: 200px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -285,9 +319,200 @@ Font-size + p {
 
 
 
+/**************************** 5) L'OPACITE ****************************/
+
+#opacity h2{
+    text-align: center;
+
+}
+#opacity div{
+    width: 400px;
+    margin: 20px auto;
+    background-color: #34495e;
+    padding: 20px;
+    border: 1px  #56495eff solid
+
+}
+
+#opacity div:nth-of-type(1){
+    opacity: 0;
+}
+#opacity div:nth-of-type(2){
+    opacity: 0.3;
+}
+#opacity div:nth-of-type(3){
+    opacity: 0.5;
+}
+#opacity div:nth-of-type(4){
+    opacity: 1;
+}
+
+#opacity p{
+    color:#fff;
+}
+
+#opacity img{
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    opacity: 0.3;
+
+}
+
+#opacity a{
+    position: relative;
+    display: block;
+    height: 150px;
+    padding: 20px;
+    color: #fff;
+}
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+/**************************** 6) Les bordure ****************************/
+
+#border div{
+    height: 150px;
+    width: 150px;
+    margin: 50px auto;
+    background-color: #bdc3c7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.solid{
+    border : 3px solid #34495e
+}
+.dashed{
+    border : 3px dashed #34495e
+}
+.thich_double{
+    border : thick double #34495e
+}
+.ridge{
+    border : 3px ridge #34495e
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************** 7) le Z-Index ****************************/
+
+
+#zindex{
+    height: 400px;
+}
+
+.z-contain{
+    position: relative;
+}
+
+
+.z-contain div{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    color: #fff;
+    padding: 10px;
+
+
+}
+.z-contain div:nth-of-type(1){
+    left: 40%;
+    background-color: #2c3e50;
+    z-index: 0;
+}
+.z-contain div:nth-of-type(2){
+    left: 50%;
+    background-color: #e74c3C;
+    z-index: 1;
+}
+.z-contain div:nth-of-type(3){
+    left: 60%;
+    background-color: #27ae60;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************** 8) Les gradients ****************************/
+
+.gradientcolor div{
+    width: 250px ;
+    height: 250px ;
+    margin: 20px auto;
+}
+
+.gradientcolor div:nth-of-type(1){
+    background: linear-gradient(red,orange,yellow,blue,green);
+}
+
+.gradientcolor div:nth-of-type(2){
+    /* position des couleur definissable grace au pourcentage
+    si pas de valeur, elle se repartiront de maniere egale
+    */
+    background: linear-gradient( red 10% , orange 25% , yellow 50%, blue 60%, green 90% );
+}
+
+.gradientcolor div:nth-of-type(3){
+    background: linear-gradient( red 10%, 50%, blue 70%);
+}
+.gradientcolor div:nth-of-type(4){
+    background: linear-gradient(45deg, blue, red)
+}
+
+.gradientcolor div:nth-of-type(5){
+    background: linear-gradient(to left top, blue, red)
+}
+
+.gradientcolor div:nth-of-type(6){
+    background: linear-gradient(0deg, tomato,green 30%, brown)
+}
+
+.gradientcolor div:nth-of-type(7){
+    background: radial-gradient(circle,
+                rgb(255, 255, 255) 0%,
+                rgb(26, 26, 26) 20%,
+                rgb(61, 37, 13) 40%,
+                rgb(84, 5, 72) 60%,
+                rgb(0, 0, 255) 100%);
+    color: whitesmoke;
+    text-align: center;
+}
 
 
 
@@ -359,6 +584,7 @@ Font-size + p {
 nav{
     background-color: #deb887;
 }
+
 button{
     height: 60px;
     width: 150px;
